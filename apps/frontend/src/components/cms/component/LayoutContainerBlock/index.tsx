@@ -31,14 +31,13 @@ export const LayoutContainerBlockComponent : CmsComponent<Partial<LayoutContaine
         typeof backgroundImage === "object" &&
         "url" in backgroundImage
     ) {
-		    // Set background image style
-            const bgImage: any = backgroundImage.url;
-		    backgroundStyle = {
-			backgroundImage: `url(${bgImage.default})`,
-			backgroundSize: "cover",
-			backgroundPosition: "center",
-		    };
-  }
+        // Set background image style
+        backgroundStyle = {
+            backgroundImage: `url(${backgroundImage.url})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+        };
+    }
 
     // Apply classes from maps
     if (gap && gapSizeClassMap[gap]) innerClasses.push(gapSizeClassMap[gap])
