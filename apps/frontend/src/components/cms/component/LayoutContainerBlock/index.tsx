@@ -34,9 +34,9 @@ export const LayoutContainerBlockComponent : CmsComponent<Partial<LayoutContaine
 		    // Set background image style
             const bgImage: any = backgroundImage.url;
 		    backgroundStyle = {
-		      backgroundImage: `url(${bgImage.default})`,
-		      backgroundSize: "cover",
-		      backgroundPosition: "center",
+			backgroundImage: `url(${bgImage.default})`,
+			backgroundSize: "cover",
+			backgroundPosition: "center",
 		    };
   }
 
