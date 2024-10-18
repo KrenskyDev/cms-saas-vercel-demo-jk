@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Figtree } from "next/font/google";
 import "./globals.scss";
 import { Body, ThemeProvider } from "@/components/theme"
 import Header from "@/components/layout/header";
@@ -13,7 +13,7 @@ import { Scripts } from '@remkoj/optimizely-one-nextjs/server'
 import GoogleAnalytics from '@/components/integrations/google-analytics'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
-const figtree = Poppins({ subsets: ["latin"] });
+const figtree = Figtree({ subsets: ["latin"] });
 
 export async function generateMetadata(): Promise<Metadata> {
   const domain = process.env.NEXT_PUBLIC_SITE_DOMAIN
