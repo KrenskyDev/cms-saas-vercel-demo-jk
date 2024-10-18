@@ -145,7 +145,7 @@ const Card: FunctionComponent<CardProps> = ({ data, inEditMode }) => {
           >
             <Image
               data-epi-edit={inEditMode ? "CardImage" : undefined}
-              className="rounded-[40px] object-contain"
+              className="rounded-[40px] "
               src={ imageUrl.href }
               alt={""}
               width={200}
