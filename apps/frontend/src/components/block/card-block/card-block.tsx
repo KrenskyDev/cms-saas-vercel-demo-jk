@@ -98,15 +98,7 @@ const Card: FunctionComponent<CardProps> = ({ data, inEditMode }) => {
             " "
           )} dark:!text-ghost-white dark:prose-h3:text-ghost-white dark:prose-h2:text-ghost-white`}
         >
-          {iconUrl && (
-            <Image
-              data-epi-edit={inEditMode ? "CardIcon" : undefined}
-              src={ iconUrl.href }
-              alt={""}
-              width={48}
-              height={48}
-            />)
-          }
+        
           {heading ? (
             <h2
               data-epi-edit={inEditMode ? "CardHeading" : undefined}
@@ -119,6 +111,15 @@ const Card: FunctionComponent<CardProps> = ({ data, inEditMode }) => {
               dangerouslySetInnerHTML={{ __html: subheading }}
             ></h3>
           ) : null}
+            {iconUrl && (
+            <Image
+              data-epi-edit={inEditMode ? "CardIcon" : undefined}
+              src={ iconUrl.href }
+              alt={""}
+              width={48}
+              height={48}
+            />)
+          }
           {description ? (
             <div
               data-epi-edit={inEditMode ? "CardDescription" : undefined}
@@ -126,10 +127,10 @@ const Card: FunctionComponent<CardProps> = ({ data, inEditMode }) => {
             ></div>
           ) : null}
           {button && button.children ? (
-            <ButtonBlock
+           <!-- <ButtonBlock
               data-epi-edit={inEditMode ? "CardButton" : undefined}
               {...button}
-            ></ButtonBlock>
+            ></ButtonBlock> -->
           ) : null}
         </div>
         {imageUrl &&  (
