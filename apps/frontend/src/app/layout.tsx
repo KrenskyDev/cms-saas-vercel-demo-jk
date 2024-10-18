@@ -13,7 +13,7 @@ import { Scripts } from '@remkoj/optimizely-one-nextjs/server'
 import GoogleAnalytics from '@/components/integrations/google-analytics'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
-const figtree = Figtree({ subsets: ["latin"] });
+const figtree = Poppins({ subsets: ["latin"] });
 
 export async function generateMetadata(): Promise<Metadata> {
   const domain = process.env.NEXT_PUBLIC_SITE_DOMAIN
