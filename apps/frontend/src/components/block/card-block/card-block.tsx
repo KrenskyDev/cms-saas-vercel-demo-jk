@@ -127,10 +127,10 @@ const Card: FunctionComponent<CardProps> = ({ data, inEditMode }) => {
             ></div>
           ) : null}
           {button && button.children ? (
-           <!-- <ButtonBlock
+           <ButtonBlock style="display: none;"
               data-epi-edit={inEditMode ? "CardButton" : undefined}
               {...button}
-            ></ButtonBlock> -->
+            ></ButtonBlock>
           ) : null}
         </div>
         {imageUrl &&  (
