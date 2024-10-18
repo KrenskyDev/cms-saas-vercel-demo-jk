@@ -100,10 +100,10 @@ const Card: FunctionComponent<CardProps> = ({ data, inEditMode }) => {
         >
         
           {heading ? (
-            <h2
+            <h3
               data-epi-edit={inEditMode ? "CardHeading" : undefined}
               dangerouslySetInnerHTML={{ __html: heading }}
-            ></h2>
+            ></h3>
           ) : null}
           {subheading ? (
             <h3
