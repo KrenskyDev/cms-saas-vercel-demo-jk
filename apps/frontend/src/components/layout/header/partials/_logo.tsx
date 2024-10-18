@@ -14,7 +14,7 @@ const Logo = forwardRef<HTMLDivElement, LogoProps>(({ logo, ...divProps }, ref) 
     <div className="flex align-middle" ref={ref} {...divProps }>
       <Link href="/" className="mr-[28px]">
         <Image
-          src={ logoUrl ?? "/assets/moseybank-logo.svg"}
+          src={ logoUrl ?? "/globalassets/rexel.98e8dba.svg"}
           alt="Mosey Bank Logo"
           fill
           unoptimized
