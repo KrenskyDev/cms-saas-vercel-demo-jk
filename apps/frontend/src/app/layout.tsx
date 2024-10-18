@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Figtree } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.scss";
 import { Body, ThemeProvider } from "@/components/theme"
 import Header from "@/components/layout/header";
@@ -13,7 +13,7 @@ import { Scripts } from '@remkoj/optimizely-one-nextjs/server'
 import GoogleAnalytics from '@/components/integrations/google-analytics'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
-const figtree = Figtree({ subsets: ["latin"] });
+const poppins = Poppins({ weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], subsets: ["latin"] });
 
 export async function generateMetadata(): Promise<Metadata> {
   const domain = process.env.NEXT_PUBLIC_SITE_DOMAIN
@@ -64,7 +64,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Scripts.Header experimentationAllowOverride={ !forceDisableOverride } />
       </head>
       <ThemeProvider value={{ theme: "system" }}>
-        <Body className={`${figtree.className} bg-ghost-white dark:bg-vulcan dark:text-white overflow-x-hidden`}>
+        <Body className={`${poppins.className} bg-ghost-white dark:bg-vulcan dark:text-white overflow-x-hidden`}>
           <div className="flex min-h-screen flex-col justify-between">
             <OptimizelyOneProvider value={{ debug: true }} >
               <Header />
