@@ -148,7 +148,8 @@ const Card: FunctionComponent<CardProps> = ({ data, inEditMode }) => {
               className="rounded-[40px] object-none flex object-center items-center"
               src={ imageUrl.href }
               alt={""}
-              
+              width={200}
+              height={200}
             />
           </motion.div>
         )}
