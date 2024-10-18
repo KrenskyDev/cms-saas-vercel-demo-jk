@@ -101,7 +101,7 @@ const Card: FunctionComponent<CardProps> = ({ data, inEditMode }) => {
         
           {heading ? (
             <h3
-              className="text-pale-sky font-light"
+              className="text-pale-sky font-light uppercase"
               data-epi-edit={inEditMode ? "CardHeading" : undefined}
               dangerouslySetInnerHTML={{ __html: heading }}
             ></h3>
@@ -136,7 +136,7 @@ const Card: FunctionComponent<CardProps> = ({ data, inEditMode }) => {
         </div>
         {imageUrl &&  (
           <motion.div
-            className={`@[80rem]/card:col-span-6 ${
+            className={`@[80rem]/card:col-span-6  object-none object-center ${
               imageLayout === "after"
                 ? "order-first lg:order-last @[80rem]/card:col-start-7"
                 : "order-first"
