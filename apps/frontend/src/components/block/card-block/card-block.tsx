@@ -117,8 +117,9 @@ const Card: FunctionComponent<CardProps> = ({ data, inEditMode }) => {
               data-epi-edit={inEditMode ? "CardIcon" : undefined}
               src={ iconUrl.href }
               alt={""}
-              width={26}
-              height={26}
+              width={0}
+              height={0}
+              style={{ width: 'auto', maxHeight: '48px' }}
             />)
           }
           {description ? (
