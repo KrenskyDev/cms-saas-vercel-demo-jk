@@ -136,7 +136,7 @@ const Card: FunctionComponent<CardProps> = ({ data, inEditMode }) => {
         </div>
         {imageUrl &&  (
           <motion.div
-            className={`@[80rem]/card:col-span-6  object-none object-center ${
+            className={`@[80rem]/card:col-span-6 flex object-none object-center ${
               imageLayout === "after"
                 ? "order-first lg:order-last @[80rem]/card:col-start-7"
                 : "order-first"
