@@ -29,7 +29,7 @@ const Card: FunctionComponent<CardProps> = ({ data, inEditMode }) => {
 
   switch (color) {
     case "white":
-      additionalClasses.push("bg-ghost-white border-[2px]");
+      additionalClasses.push("bg-ghost-white");
       innerClasses.push(
         "text-vulcan prose-h3:text-vulcan prose-h2:text-vulcan"
       );
