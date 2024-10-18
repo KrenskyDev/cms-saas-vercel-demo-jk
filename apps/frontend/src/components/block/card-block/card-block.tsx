@@ -92,7 +92,7 @@ const Card: FunctionComponent<CardProps> = ({ data, inEditMode }) => {
         " "
       )} dark:!text-ghost-white dark:prose-h3:text-ghost-white dark:prose-h2:text-ghost-white`}
     >
-      <div className="w-full h-full grid auto-rows-auto @[80rem]/card:items-center grid-cols-1 gap-16 @[80rem]/card:grid-cols-12">
+      <div className="w-full h-full grid auto-rows-auto @[80rem] grid-cols-1 gap-16 @[80rem]/card:grid-cols-12">
         <div
           className={`prose prose-h2:text-[48px] prose-h2:mb-[24px] prose-h2:mt-[24px] prose-h3:text-[24px] prose-p:text-[20px] prose-img:my-4 @[80rem]/card:col-span-5 ${innerClasses.join(
             " "
