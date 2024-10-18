@@ -127,7 +127,7 @@ const Card: FunctionComponent<CardProps> = ({ data, inEditMode }) => {
             ></div>
           ) : null}
           {button && button.children ? (
-           <ButtonBlock style="display: none;"
+           <ButtonBlock
               data-epi-edit={inEditMode ? "CardButton" : undefined}
               {...button}
             ></ButtonBlock>
@@ -146,8 +146,8 @@ const Card: FunctionComponent<CardProps> = ({ data, inEditMode }) => {
               className="rounded-[40px] w-full"
               src={ imageUrl.href }
               alt={""}
-              width={660}
-              height={440}
+              width={300}
+              height={300}
             />
           </motion.div>
         )}
