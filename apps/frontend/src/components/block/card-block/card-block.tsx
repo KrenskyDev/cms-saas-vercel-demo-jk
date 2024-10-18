@@ -137,7 +137,7 @@ const Card: FunctionComponent<CardProps> = ({ data, inEditMode }) => {
         </div>
         {imageUrl &&  (
           <motion.div
-            className={`@[80rem]/card:col-span-6 flex object-none object-center ${
+            className={`@[80rem]/card:col-span-6 object-none flex object-center ${
               imageLayout === "after"
                 ? "order-first lg:order-last @[80rem]/card:col-start-7"
                 : "order-first"
@@ -145,11 +145,12 @@ const Card: FunctionComponent<CardProps> = ({ data, inEditMode }) => {
           >
             <Image
               data-epi-edit={inEditMode ? "CardImage" : undefined}
-              className="rounded-[40px] object-none object-center items-center"
+              className="rounded-[40px] object-none flex object-center items-center"
               src={ imageUrl.href }
               alt={""}
-              width={150}
-              height={150}
+              width={0}
+              height={0}
+              
             />
           </motion.div>
         )}
