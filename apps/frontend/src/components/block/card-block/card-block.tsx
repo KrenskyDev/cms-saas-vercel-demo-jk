@@ -126,12 +126,12 @@ const Card: FunctionComponent<CardProps> = ({ data, inEditMode }) => {
               dangerouslySetInnerHTML={{ __html: description?.html ?? '' }}
             ></div>
           ) : null}
-          {button && button.children ? (
+          {/*{button && button.children ? (
            <ButtonBlock
               data-epi-edit={inEditMode ? "CardButton" : undefined}
               {...button}
             ></ButtonBlock>
-          ) : null}
+          ) : null}*/}
         </div>
         {imageUrl &&  (
           <motion.div
@@ -146,8 +146,8 @@ const Card: FunctionComponent<CardProps> = ({ data, inEditMode }) => {
               className="rounded-[40px] w-full"
               src={ imageUrl.href }
               alt={""}
-              width={300}
-              height={300}
+              width={150}
+              height={150}
             />
           </motion.div>
         )}
